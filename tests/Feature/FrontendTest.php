@@ -42,6 +42,6 @@ class FrontendTest extends TestCase
     {
         $response = $this->get('/charts');
 
-        $response->assertSee('Weekly Retention Curves, Temper');
+        $response->assertSee('Retention Curve Chart');
     }
 }

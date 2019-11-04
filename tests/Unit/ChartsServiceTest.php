@@ -56,7 +56,7 @@ class ChartsServiceTest extends TestCase
 
     public function testSingleCohortTest()
     {
-        $cohort = $this->chartsService->getSingleCohort($this->usersGroupedByWeek->first());
+        $cohort = $this->chartsService->singleCohortData($this->usersGroupedByWeek->first());
 
         $this->assertEquals(2, count($cohort));
         $this->assertArrayHasKey('name', $cohort);
@@ -68,7 +68,7 @@ class ChartsServiceTest extends TestCase
 
     public function testGetRetentionCurvesTest()
     {
-        $retentionCurves = $this->chartsService->getRetentionCurvesData();
+        $retentionCurves = $this->chartsService->retentionCurveData();
 
         $this->assertGreaterThan(0, count($retentionCurves));
     }
