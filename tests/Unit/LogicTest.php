@@ -18,7 +18,7 @@ class LogicTest extends TestCase
     public function testUserFetchByWeekTest()
     {
         $userRepository = new Users();
-        $users = $userRepository->groupedByWeek()->toArray();
+        $users = $userRepository->groupByWeek()->toArray();
         $weekNumbers = array_keys($users);
 
         // Couldn't find an array assert method that checks the

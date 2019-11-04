@@ -39,8 +39,8 @@ class DateServiceTest extends TestCase
         $wednesday = '2019-10-20';
         $friday = '2019-10-22';
 
-        $this->assertEquals($monday, $this->dateService->getMondayDateOfTheWeekForDate($monday));
-        $this->assertEquals($monday, $this->dateService->getMondayDateOfTheWeekForDate($wednesday));
-        $this->assertEquals($monday, $this->dateService->getMondayDateOfTheWeekForDate($friday));
+        $this->assertEquals($monday, $this->dateService->calculateFirstdayOfTheWeekOfAnyDate($monday));
+        $this->assertEquals($monday, $this->dateService->calculateFirstdayOfTheWeekOfAnyDate($wednesday));
+        $this->assertEquals($monday, $this->dateService->calculateFirstdayOfTheWeekOfAnyDate($friday));
     }
 }

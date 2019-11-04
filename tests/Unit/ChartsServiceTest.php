@@ -19,7 +19,7 @@ class ChartsServiceTest extends TestCase
         parent:: setUp();
 
         $this->chartsService = $this->app->make('charts');
-        $this->usersGroupedByWeek = $this->chartsService->users->groupedByWeek();
+        $this->usersGroupedByWeek = $this->chartsService->users->groupByWeek();
     }
 
     public function testUserCountOfSingleOnboardingPercentageTest()
