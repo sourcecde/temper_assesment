@@ -1,1 +1,1 @@
-TEST
+<?php echo json_encode($charts); ?>

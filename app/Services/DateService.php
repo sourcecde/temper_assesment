@@ -31,4 +31,17 @@ class DateService
         return Carbon::parse($date)->subDays($daysToSubtract);
     }
 
+    /**
+     * Calculate  first day of the week 
+     *
+     * @param $date
+     * @return DateService
+     */
+    public function calculateFirstdayOfTheWeekOfAnyDate($date)
+    {
+        $daysToSubtract = $this->numberOfDayOfWeek($date) - 1; // 1 = Monday
+
+        return $cohortDate = $this->subtractDaysFromDate($date, $daysToSubtract)->format('Y-m-d');
+    }
+
 }
