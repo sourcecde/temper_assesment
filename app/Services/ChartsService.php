@@ -115,6 +115,6 @@ class ChartsService
      */
     public function retentionCurveData()
     {
-        return $this->cohortsWeeklyData($this->users->groupedByWeek());
+        return $this->cohortsWeeklyData($this->users->groupByWeek());
     }
 }
