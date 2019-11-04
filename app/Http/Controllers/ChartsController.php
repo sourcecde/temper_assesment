@@ -6,5 +6,5 @@ use Illuminate\Http\Request;
 
 class ChartsController extends Controller
 {
-    //
+    echo "MIMI";
 }

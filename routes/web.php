@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('charts');
 });
+
+Route::get('/charts','ChartsController@index');
