@@ -19,27 +19,21 @@
                     },
 
                     title: {
-                        text: ''
+                        text: 'Retention Curve Chart'
                     },
 
                     yAxis: {
                         floor: 0,
                         ceiling: 100,
                         title: {
-                            text: ''
+                            text: 'Percentage of Users in onboarding step'
                         }
                     },
 
                     xAxis: {
                         title: {
-                            text: ''
+                            text: 'Onboarding Percentage'
                         }
-                    },
-
-                    legend: {
-                        layout: 'vertical',
-                        align: 'right',
-                        verticalAlign: 'middle'
                     },
 
                     plotOptions: {

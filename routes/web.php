@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('charts');
+    return redirect('charts');
 });
 
-Route::get('/charts','ChartsController@index');
+Route::get('/charts', 'ChartsController@index');
